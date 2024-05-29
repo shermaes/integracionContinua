@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Facturacion</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <section class="titulo">
+        <h1>Sistema de Facturación</h1>
+    </section>
+
+    <main class="contenedor-principal">
+        <form class="formulario-cliente" action="#">
+            <div class="ingreso-cliente">
+                <label class="tp" for="cliente">Documento de Cliente</label>
+                <input class="inp-documento" type="text" name="cliente">
+            </div>
+
+            <div class="form-boton">  
+                <input class="btn  "type="submit" value="Validar" >
+            </div>
+
+            <div class="form-nombre-cliente">
+                <Div class="fnc-1">
+                    <p>Nombre:</p>
+                    <p>Apellido:</p>
+                    <p>Cedula o NIT:</p>
+                </Div>
+                
+                <div class="fnc-2">
+                    <p>Direccion:</p>
+                    <p>Telefono:</p>
+                    <p>Correo:</p>
+                </div>
+                
+            </div>
+
+        </form>
+
+        
+        <section class="titulo-compra">
+
+            <div class="id">
+                <p class="tc-t">Id</p>
+            </div>
+
+            <div class="producto">
+                <p class="tc-t">Producto</p>
+            </div>
+            
+            <div class="Cantidad">
+                <p class="tc-t">Cantidad</p>  
+            </div>
+
+            <div class="precio-u">
+                <p class="tc-t">Precio por Unidad</p>    
+            </div>
+
+            <div class="precio-t">
+                <p class="tc-t">Precio Total</p>    
+            </div>
+
+        </section>
+
+        <section class="area-compra">
+
+            <div class="id">
+                <p class="ac-t">1</p>
+            </div>
+
+            <div class="producto">
+                <p class="ac-t">Papa</p>
+            </div>
+            
+            <div class="cantidad">
+                <div class="btn-add">+</div>
+                <p class="my-1 mx-2 ac-t">20</p>
+                <div class="btn-remove">-</div>
+            </div>
+
+            <div class="precio-u">
+                <p class="ac-t">$20.000</p>    
+            </div>
+
+            <div class="precio-t">
+                <p class="ac-t" >$60.000</p>    
+            </div>
+
+        </section>
+
+        
+        <div class="inferior">
+            <section>
+                <form class="formulario-producto" action="#">
+                    <div class="ingreso-cliente">
+                        <label class="tp" for="cliente">Ingrese Producto</label>
+                        <input class="inp-documento" type="text" name="cliente">
+                    </div>
+        
+                    <div class="form-boton">  
+                        <input class="btn"type="submit" value="Agregar" >
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <section class="resumen-cuenta ">
+                <div class="rc">
+                    <h3 class="m-5">Subtotal</h3>
+                    <p class="m-5">$------</p>           
+                    
+                </div>
+                <div class="rc">
+                    <h3 class="m-5">Total</h3>
+                    <p class="m-5">$------</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
